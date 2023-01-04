@@ -1,0 +1,39 @@
+@model VuHongNgocBTH2.Models.VHN069
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Sửa</h1>
+
+<h4>VHN069</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="VHNId" />
+            <div class="form-group">
+                <label asp-for="VHNName" class="control-label"></label>
+                <input asp-for="VHNName" class="form-control" />
+                <span asp-validation-for="VHNName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="VHNGender" class="control-label"></label>
+                <input asp-for="VHNGender" class="form-control" />
+                <span asp-validation-for="VHNGender" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

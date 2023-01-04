@@ -13,4 +13,6 @@ using VuHongNgocBTH2.Models;
         }
 
         public DbSet<VuHongNgocBTH2.Models.CompanyVHN069> CompanyVHN069 { get; set; } = default!;
+
+        public DbSet<VuHongNgocBTH2.Models.VHN069> VHN069 { get; set; } = default!;
     }
