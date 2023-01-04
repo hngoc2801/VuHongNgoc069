@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\VuHongNgoc069.props" />
+</Project>
